@@ -12,6 +12,30 @@
       "version": "0.2.0"
     },
     {
+      "name": "a11y-audit",
+      "source": "./bundles/feature-development/skills/a11y-audit",
+      "description": "Gated, stack-aware accessibility review — detects the frontend stack, bootstraps missing a11y linters, runs a full WCAG 2.1+2.2 AA checklist against the diff, audits component-library risk, generates remediation prototypes for critical gaps, proposes unit-test/CI coverage, and writes a self-contained HTML report. Accessibility is a non-functional requirement, not a default check — use only when the user, a ticket, or an NFR explicitly asks to \"audit accessibility\", \"run an a11y review\", \"check WCAG compliance\", or similar. Not for implementation-time guidance (see a11y-dev), a default pass on every UI PR, or e2e accessibility testing (see the test-automation bundle's a11y-test-automation skill).",
+      "version": "0.2.0"
+    },
+    {
+      "name": "a11y-dev",
+      "source": "./bundles/feature-development/skills/a11y-dev",
+      "description": "Implement accessible UI — semantic HTML, ARIA, keyboard/focus management, forms, contrast, and interactive widget patterns (tabs, combobox, dialog, menu, tree, data grid) — while writing or modifying frontend code. Use when building a component, page, or form; when asked to \"make this accessible\" / \"build an accessible combobox\" / \"fix a11y\"; or before authoring any custom interactive widget. Not for auditing existing UI, running WCAG checklists, installing/wiring a11y linters, or generating reports — see a11y-audit.",
+      "version": "0.2.0"
+    },
+    {
+      "name": "a11y-mobile-audit",
+      "source": "./bundles/feature-development/skills/a11y-mobile-audit",
+      "description": "Gated, platform-aware accessibility review for native mobile — detects iOS/Android/Flutter, runs a severity-ranked WCAG 2.2 AA checklist per control against the diff, proposes XCTest/Espresso/flutter_test coverage and CI wiring, covers ADA/EAA/Section 508/VPAT compliance where relevant, and writes a self-contained HTML report. Accessibility is a non-functional requirement, not a default check — use only when the user, a ticket, or an NFR explicitly asks to \"audit accessibility\", \"run an a11y review\", \"check WCAG compliance\", or similar on a native iOS, Android, or Flutter app. Not for implementation-time guidance (see a11y-mobile-dev), web/ARIA audits (see a11y-audit), or a default pass on every native UI PR.",
+      "version": "0.2.0"
+    },
+    {
+      "name": "a11y-mobile-dev",
+      "source": "./bundles/feature-development/skills/a11y-mobile-dev",
+      "description": "Implement accessible native mobile UI — iOS (SwiftUI/UIKit), Android (Views/Compose), and Flutter — VoiceOver/TalkBack labels and traits, Dynamic Type/font-scale parity, focus and grouping, touch target size, and per-control accessibility patterns (button, dropdown, sheet, carousel, data row, and more). Use when building or reviewing a native screen/component; when asked to \"make this accessible\" / \"add VoiceOver support\" / \"fix a11y\" on iOS, Android, or Flutter; or before authoring any custom interactive control on a native platform. Not for web/ARIA patterns (see a11y-dev), auditing existing native UI, running a WCAG checklist, or generating a report — see a11y-mobile-audit.",
+      "version": "0.2.0"
+    },
+    {
       "name": "atlassian-content",
       "source": "./bundles/test-automation/skills/atlassian-content",
       "description": "Create well-formatted Jira issues/comments and Confluence pages on both Cloud and Server/Data Center, with mandatory post-creation re-fetch + repair. Load for \"file a bug\", \"comment on JIRA-123\", \"write up a decision page\", or any authored Atlassian content.",
@@ -32,7 +56,7 @@
     {
       "name": "code-review",
       "source": "./bundles/feature-development/skills/code-review",
-      "description": "Review code for correctness, security, performance, and maintainability. Use when the user asks to \"review this code\", \"check my changes\", \"review PR\", \"audit\" — and proactively after a non-trivial change or before opening, approving, or merging a PR, even unprompted.",
+      "description": "Review code for correctness, security, performance, maintainability, and accessibility. Use when the user asks to \"review this code\", \"check my changes\", \"review PR\", \"audit\" — and proactively after a non-trivial change or before opening, approving, or merging a PR, even unprompted.",
       "version": "0.2.0"
     },
     {

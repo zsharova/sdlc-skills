@@ -63,7 +63,9 @@ Write the minimum code to pass the tests. Rules:
 
 Sanity check before running automated tests. API → `curl` the endpoint. UI →
 browser snapshot + interaction. Backend logic → one-liner that calls the
-function. Catches the obvious breaks before test run.
+function. Catches the obvious breaks before test run. For any UI work, also
+tab through the new interactive elements by keyboard — see `a11y-dev` if
+something built isn't keyboard-operable or needs an accessible name.
 
 ### 5. Write automated tests
 
@@ -74,6 +76,8 @@ feature touches external systems (DB, APIs) or has a UI component.
 
 All tests, lint, type check, and `git diff --stat` to confirm the scope of
 changes matches expectations. Don't ship if anything fails — fix it first.
+If a11y linters are active (see `a11y-dev`), their findings are part of this
+gate too, not a separate pass.
 
 ### 7. Commit & PR
 

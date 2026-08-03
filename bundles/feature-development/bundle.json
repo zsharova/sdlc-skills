@@ -14,7 +14,8 @@
     "js-dev": {
       "label": "JS/TS frontend (React)",
       "platform": "web",
-      "skillOverlay": { "add": ["vercel-react-best-practices"] }
+      "briefing": "briefings/roles/js-dev.md",
+      "skillOverlay": { "add": ["vercel-react-best-practices", "a11y-dev"] }
     },
     "test-automation-engineer": {
       "label": "Test automation (E2E / Playwright)",
@@ -23,7 +24,8 @@
     },
     "ios-dev": {
       "label": "iOS — Swift/SwiftUI",
-      "platform": "ios"
+      "platform": "ios",
+      "skillOverlay": { "add": ["a11y-mobile-dev"] }
     }
   },
   "platforms": {
@@ -35,7 +37,7 @@
         "qa-engineer": "briefings/web/qa-engineer.md"
       },
       "skillOverlays": {
-        "tech-lead": { "add": ["fastapi", "fastmcp-server", "vercel-react-best-practices"] }
+        "tech-lead": { "add": ["fastapi", "fastmcp-server", "vercel-react-best-practices", "a11y-audit"] }
       }
     },
     "ios": {
@@ -46,7 +48,7 @@
         "qa-engineer": "briefings/ios/qa-engineer.md"
       },
       "skillOverlays": {
-        "tech-lead": { "add": ["swiftui-pro", "swiftdata-pro", "swift-testing-pro", "swift-concurrency-pro"] },
+        "tech-lead": { "add": ["swiftui-pro", "swiftdata-pro", "swift-testing-pro", "swift-concurrency-pro", "a11y-mobile-audit"] },
         "qa-engineer": {
           "add": ["swift-testing-pro", "environment-setup-xcuitest", "xcuitest-real-device-config", "appium-troubleshooting"],
           "remove": ["playwright-testing", "playwright-cli", "browser-verify"]
@@ -54,7 +56,7 @@
       }
     }
   },
-  "localSkills": ["browser-verify", "bugfix-workflow", "code-review", "completing-a-task", "git-workflow", "implement-feature", "issue-tracking", "memory", "plan-feature", "playwright-testing", "reproducing-issues", "root-cause-analysis", "seeding-a-project", "session-retrospective", "test-automation-workflow", "test-case-analysis"],
+  "localSkills": ["a11y-audit", "a11y-dev", "a11y-mobile-audit", "a11y-mobile-dev", "browser-verify", "bugfix-workflow", "code-review", "completing-a-task", "git-workflow", "implement-feature", "issue-tracking", "memory", "plan-feature", "playwright-testing", "reproducing-issues", "root-cause-analysis", "seeding-a-project", "session-retrospective", "test-automation-workflow", "test-case-analysis"],
   "localAgents": ["scout", "ba", "project-manager", "tech-lead", "qa-engineer", "python-dev", "js-dev", "test-automation-engineer", "ios-dev"],
   "instructions": "instructions.md",
   "targets": ["claude"]

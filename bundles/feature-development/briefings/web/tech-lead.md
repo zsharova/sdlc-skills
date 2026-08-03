@@ -20,3 +20,10 @@ the two sides drifting on request/response shapes, and auth/secrets
 crossing into the client bundle. Prefer a generated/shared type for the
 boundary over duplicated interfaces. Review both stacks against their own
 conventions — don't apply Python idioms to TS or vice versa.
+
+Accessibility is a non-functional requirement, not a default check on every
+UI PR — run it when it's explicitly in scope (the ticket/NFR calls for
+WCAG/a11y compliance, or the user asks for an accessibility review).
+When it is in scope: `code-review`'s Accessibility category catches obvious
+regressions inline; for the full gated pass, run the `a11y-audit` skill — it
+bootstraps a11y linters, runs the WCAG checklist, and produces the report.
