@@ -1,5 +1,5 @@
 ---
-name: a11y-audit
+name: a11y-dev
 description: Gated, stack-aware accessibility review — detects the frontend stack, bootstraps missing a11y linters, runs a full WCAG 2.1+2.2 AA checklist against the diff, audits component-library risk, flags confirmed critical gaps for remediation (delegated to a11y-dev), proposes unit-test/CI coverage, and writes a self-contained HTML report. Accessibility is a non-functional requirement, not a default check — use only when the user, a ticket, or an NFR explicitly asks to "audit accessibility", "run an a11y review", "check WCAG compliance", or similar. Not for implementation-time guidance or remediation prototypes (see a11y-dev), a default pass on every UI PR, or e2e accessibility testing (see the test-automation bundle's a11y-test-automation skill).
 license: Apache-2.0
 metadata:
